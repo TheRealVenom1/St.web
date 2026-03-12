@@ -3,70 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>St. Paul's College - Frères Shobra | الموقع الرسمي</title>
+    <title>St. Paul's School - The Royal Frères Shobra</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="brand">
                 <img src="https://i.ibb.co/9mZBRgCg/FB-IMG-1773338081268.jpg" alt="Logo">
-                <span>الفرير شبرا</span>
+                <h2 class="school-name-text">ST. PAUL SCHOOL</h2>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">عن المدرسة</a></li>
-                <li><a href="#history">تاريخنا</a></li>
-                <li><a href="#activities">الأنشطة</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#history">تاريخنا الملكي</a></li>
+                <li><a href="#academics">الأكاديمية</a></li>
+                <li><a href="#campus">الحرم المدرسي</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>مدرسة القديس بولس - الفرير شبرا</h1>
-                <p>صرح تعليمي شامخ منذ عام 1890</p>
-                <button class="btn-main">اكتشف مدرستنا</button>
+    <section id="home" class="main-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="badge-container">
+                <img src="https://i.ibb.co/9mZBRgCg/FB-IMG-1773338081268.jpg" class="floating-logo" alt="Badge">
+            </div>
+            <h1 class="glow-text">مدرسة القديس بولس</h1>
+            <h2 class="sub-text">Frères Shobra - Established 1890</h2>
+            <div class="hero-btns">
+                <a href="#about" class="gold-btn">جولة افتراضية</a>
+                <a href="#apply" class="outline-btn">سجل الآن</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section id="history" class="heritage-section">
         <div class="container">
-            <h2 class="section-title">لماذا نحن؟</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>تعليم متميز</h3>
-                    <p>نتبع أحدث النظم التعليمية للغات لضمان مستقبل أفضل لأبنائنا.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>قيم وأخلاق</h3>
-                    <p>تربية الأجيال على مبادئ "الفرير" الأصيلة والقيم الإنسانية.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>تاريخ عريق</h3>
-                    <p>أكثر من 135 عاماً من العطاء في قلب شبرا.</p>
-                </div>
+            <div class="section-header">
+                <span class="pre-title">136 عاماً من التميز</span>
+                <h2 class="title-gold">تاريخ لا يُمحى</h2>
+                <div class="gold-divider"></div>
             </div>
+            <div class="history-grid">
+                <div class="history-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>التأسيس</h3>
+                    <p>في عام 1890، وضعت اللبنة الأولى لمدرسة الفرير في شبرا لتكون منارة للعلم والثقافة في مصر.</p>
+                </div>
+                </div>
         </div>
     </section>
 
-    <section id="history" class="history-section">
-        <h2 class="section-title">رحلتنا عبر الزمن</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="time">1890</div>
-                <div class="desc">وضع حجر الأساس وبداية الرحلة التعليمية.</div>
-            </div>
-            </div>
+    <section class="stats-section">
+        <div class="stat-box">
+            <span class="number">136</span>
+            <span class="label">سنة خبرة</span>
+        </div>
+        <div class="stat-box">
+            <span class="number">15K+</span>
+            <span class="label">خريج متميز</span>
+        </div>
+        <div class="stat-box">
+            <span class="number">50+</span>
+            <span class="label">معمل متطور</span>
+        </div>
     </section>
 
-    <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 - تصميم طالب مخلص للمدرسة</p>
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>صُمم هذا الموقع بكل فخر بواسطة طالب بمدرسة الفرير - جميع الحقوق محفوظة 2026</p>
+        </div>
     </footer>
 
 </body>
