@@ -1,140 +1,117 @@
-/* Advanced CSS for St. Paul School 
-   Theme: Luxury Gold & Deep Midnight Blue
-*/
-
-:root {
-    --gold: #d4af37;
-    --gold-glow: #f9e272;
-    --midnight: #0a0e1a;
-    --glass: rgba(255, 255, 255, 0.05);
-    --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--midnight);
-    color: white;
-    font-family: 'Cairo', sans-serif;
-    overflow-x: hidden;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #050505; }
-::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 5px; }
-
-/* Navbar Glassmorphism */
-.glass-nav {
-    position: fixed;
-    top: 0; width: 100%;
-    padding: 20px 0;
-    z-index: 2000;
-    background: rgba(10, 14, 26, 0.8);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+header {
+  text-align: center;
+  margin: 40px 0 30px;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+h1 {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 3.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  margin-bottom: 10px;
 }
 
-.brand img { height: 60px; filter: drop-shadow(0 0 10px var(--gold)); }
-
-.nav-links { display: flex; list-style: none; }
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: 700;
-    transition: var(--transition);
+.subtitle {
+  font-size: 1.4rem;
+  color: #b0b0ff;
+  margin-bottom: 20px;
 }
 
-.nav-links li a:hover { color: var(--gold); transform: scale(1.1); }
-
-/* Hero Section Animation */
-.main-hero {
-    height: 100vh;
-    background: url('https://i.ibb.co/9mZBRgCg/FB-IMG-1773338081268.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.container {
+  max-width: 900px;
+  background: rgba(20, 20, 50, 0.85);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+  border: 1px solid #444;
+  backdrop-filter: blur(8px);
 }
 
-.hero-content {
-    text-align: center;
-    z-index: 10;
-    animation: fadeInUp 1.5s ease-out;
+.intro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
-.glow-text {
-    font-family: 'Cairo', sans-serif;
-    font-size: 5rem;
-    font-weight: 900;
-    color: #fff;
-    text-shadow: 0 0 20px var(--gold), 0 0 40px var(--gold);
-    margin: 20px 0;
+.history {
+  background: rgba(0,0,0,0.4);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px 0;
+  border-right: 5px solid #ffd700;
+  text-align: center;
 }
 
-.gold-btn {
-    padding: 15px 40px;
-    background: linear-gradient(45deg, #d4af37, #f9e272);
-    color: #000;
-    text-decoration: none;
-    font-weight: 900;
-    border-radius: 50px;
-    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
-    transition: var(--transition);
+.history h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
-.gold-btn:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.6);
+.year {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  margin: 20px 0;
+  text-shadow: 0 0 15px #ffeb3b;
 }
 
-/* Animations - دي بتزود سطور كتير لو عملتها لكل عنصر */
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(50px); }
-    100% { opacity: 1; transform: translateY(0); }
+.year-desc {
+  font-size: 1.3rem;
+  color: #ddd;
+  margin-bottom: 15px;
 }
 
-@keyframes floating {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+.extra-info {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  text-align: justify;
 }
 
-.floating-logo {
-    animation: floating 3s ease-in-out infinite;
+.school-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 15px;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  border: 3px solid #444;
 }
 
-/* Stats Styling */
-.stats-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 100px 5%;
-    background: linear-gradient(to bottom, #0a0e1a, #1a2a6c);
+.hashtags {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: #aaa;
 }
 
-.stat-box {
-    text-align: center;
-    padding: 40px;
-    background: var(--glass);
-    border: 1px solid var(--gold);
-    border-radius: 20px;
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
 }
 
-.stat-box .number { font-size: 3rem; color: var(--gold); display: block; font-weight: 900; }
-
-/* ... كمل كود الـ CSS بنفس الستايل ده للأقسام التانية ... */
+@media (max-width: 768px) {
+  h1 { font-size: 2.8rem; }
+  .container { padding: 25px; }
+  .year { font-size: 2.8rem; }
+}
