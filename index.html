@@ -3,50 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>مدرسة القديس بولس - الفرير شبرا</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>مدرسة القديس بولس - الفرير شبرا | Saint Paul Frères Shoubra</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin: 40px 0 30px;
+    }
+
+    h1 {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 3.5rem;
+      color: #ffd700;
+      text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      color: #b0b0ff;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      background: rgba(20, 20, 50, 0.85);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+      border: 1px solid #444;
+      backdrop-filter: blur(8px);
+    }
+
+    .intro {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .history {
+      background: rgba(0,0,0,0.4);
+      padding: 25px;
+      border-radius: 15px;
+      margin: 30px 0;
+      border-right: 5px solid #ffd700;
+    }
+
+    .history h2 {
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .year {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #ffeb3b;
+      text-align: center;
+      margin: 20px 0;
+      text-shadow: 0 0 15px #ffeb3b;
+    }
+
+    img.school-img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 15px;
+      margin: 30px auto;
+      display: block;
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+      border: 3px solid #444;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.8rem; }
+      .container { padding: 25px; }
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>مدرسة القديس بولس</h1>
     <p class="subtitle">الفرير - شبرا | Collège Saint Paul Frères Shoubra</p>
-    <p class="established">تأسست عام 1890</p>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>كيان عريق من التاريخ</h2>
-      <p>
-        مدرسة بنين لغات إنجليزي تابعة لرهبانية الإخوة المسيحيين (الفرير).<br>
-        تقع في قلب شبرا بالقاهرة، بجوار كاتدرائية القديس مرقس.<br><br>
-        عنوان المدرسة: ٢٣ شارع البعثة (متفرع من شارع شبرا) - شبرا - القاهرة.
-      </p>
-    </section>
+  <div class="container">
+    <p class="intro">
+      واحدة من أعرق المدارس في القاهرة، مدرسة بنين لغات (إنجليزي)، تابعة لرهبانية الفرير الكاثوليكية. 
+      تقع في قلب شبرا بجانب كاتدرائية القديس مرقس الجميلة، وبها تاريخ طويل من التعليم المتميز والأخلاق والانضباط.
+      عنوانها: ٢٣ شارع البعثة (متفرع من شبرا) - شبرا - القاهرة.
+    </p>
 
-    <section class="history">
-      <h2>تاريخ المجد</h2>
+    <div class="history">
+      <h2>تاريخ المدرسة</h2>
+      <p style="text-align:center; font-size:1.4rem; margin-bottom:15px;">
+        جزء من مدارس الفرير في مصر اللي بدأت من أواخر القرن التاسع عشر، لكن
+      </p>
       <div class="year">١٨٩٠</div>
-      <p class="year-desc">
-        سنة التأسيس الرسمية لمدرسة القديس بولس - الفرير شبرا.<br>
-        في عام ٢٠٢٦: أكثر من <strong>١٣٦ عامًا</strong> من العطاء والتميز التعليمي.<br><br>
-        احتفلت المدرسة بمرور ١٣٥ عامًا في ٢٠٢٥ بحضور رسمي وكبير، وما زالت تصنع أجيالاً من الرجال الجادين والمتميزين في مختلف المجالات.
+      <p style="text-align:center; font-size:1.3rem; color:#ddd;">
+        سنة التأسيس الرسمية لمدرسة القديس بولس - الفرير شبرا<br>
+        دلوقتي (٢٠٢٦) → أكتر من <strong>١٣٦ سنة</strong> من العراقة والتميز!
       </p>
-    </section>
+      <p style="margin-top:20px; text-align:justify;">
+        المدرسة احتفلت بـ ١٣٥ سنة في ٢٠٢٥، ومازالت تصنع رجالة جادين وناجحين في كل المجالات.
+      </p>
+    </div>
 
-    <img src="https://i.ibb.co/9mZBRgCg/FB-IMG-1773338081268.jpg" 
-         alt="مدرسة القديس بولس - الفرير شبرا" 
-         class="school-img">
+    <img src="https://i.ibb.co/9mZBRgCg/FB-IMG-1773338081268.jpg" alt="مدرسة القديس بولس - الفرير شبرا" class="school-img">
 
-    <p class="legacy">
-      إرث يمتد عبر الأجيال – تعليم، أخلاق، انضباط، تميز.
+    <p style="text-align:center; font-size:1.2rem; margin-top:30px;">
+      #SaintPaulShoubra #1890 #فرير_شبرا #مدرسة_عريقة
     </p>
-
-    <p class="hashtags">
-      #SaintPaulShoubra #1890 #فرير_شبرا #عراقة_وتاريخ #سان_بول
-    </p>
-  </main>
+  </div>
 
   <footer>
     ©2026 Saint Paul. All Rights Reserved
